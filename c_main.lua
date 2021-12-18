@@ -23,13 +23,13 @@ RegisterNUICallback("show", function(data)
         
         if data.licens == "id" then
             TriggerServerEvent('jsfour-idcard:open', thisPlayer, GetPlayerServerId(closestPlayer))
-            ESX.ShowNotification("~g~Auswies gegeben")
+            ESX.ShowNotification("~g~showed ID")
         elseif data.licens == "dvm" then
             TriggerServerEvent('jsfour-idcard:open', thisPlayer, GetPlayerServerId(closestPlayer), 'driver')
-            ESX.ShowNotification("~g~Führerschein gegeben")
+            ESX.ShowNotification("~g~showed DMV")
         elseif data.licens == "gun" then
             TriggerServerEvent('jsfour-idcard:open', thisPlayer, GetPlayerServerId(closestPlayer), 'weapon')
-            ESX.ShowNotification("~g~Waffenschein gegeben")
+            ESX.ShowNotification("~g~showed Gunlicense")
         end
 
     end
@@ -78,7 +78,7 @@ function openUI()
     local closestPlayer, closestPlayerDistance = ESX.Game.GetClosestPlayer()
 
     if closestPlayer == -1 or closestPlayerDistance > 3.0 then
-        ESX.ShowNotification("~r~Es befindet sich kein Spieler in der Nähe!")
+        ESX.ShowNotification("~r~There are no Players near by!")
     else
         toggleUI()
     end
@@ -89,4 +89,4 @@ end
 RegisterCommand("openidmenu", function()
     openUI()
 end, false)
-RegisterKeyMapping("openidmenu", "Lizenz Menu", "keyboard", "I")
+RegisterKeyMapping("openidmenu", "License Menu", "keyboard", "I")
