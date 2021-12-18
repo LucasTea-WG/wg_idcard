@@ -44,7 +44,7 @@ function showLicens() {
     if (licence[0]) {
         $.post('https://wg_idCard/show', JSON.stringify({ licens: "dvm" }));
     } else {
-        $.post('https://wg_idCard/err', JSON.stringify({ message: "~r~Du hast keinen Führerschein" }));
+        $.post('https://wg_idCard/err', JSON.stringify({ message: "~r~You dont have an DMV!" }));
     }
 }
 
@@ -52,7 +52,7 @@ function showGun() {
     if (licence[1]) {
         $.post('https://wg_idCard/show', JSON.stringify({ licens: "gun" }));
     } else {
-        $.post('https://wg_idCard/err', JSON.stringify({ message: "~r~Du hast keinen Waffenschein" }));
+        $.post('https://wg_idCard/err', JSON.stringify({ message: "~r~You dont have an Gunlicense!" }));
     }
 }
 
