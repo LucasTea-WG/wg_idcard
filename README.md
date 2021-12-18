@@ -1,9 +1,8 @@
 # WaveGaming ID Card
-Eine HUD für die ESX jsfour ID Card
+A HUD for the ESX jsfour ID Card
 
 # Funktionen
-Das HUD öffnet sich durch das Drücken von "i"
-Damit sich das HUD öffnet muss man sich innerhalb von 3 Metern zu einer Person befinden.
+The HUD opens after pressing "i" to open the HUD you have to stay within 3 Meters to the next Person, that you want to give your License.
 
 # Dependencies
 - es_extended
