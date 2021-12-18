@@ -17,7 +17,7 @@ RegisterNUICallback("show", function(data)
     local thisPlayer = GetPlayerServerId(PlayerId())
     
     if closestPlayer == -1 or closestPlayerDistance > 3.0 then
-        ESX.ShowNotification("~r~Es befindet sich kein Spieler in der Nähe!")
+        ESX.ShowNotification("~r~There are no Players near by!")
         toggleUI()
     else
         
